@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Product = () => {
+const Product = (props) => {
 
     const [count, setCount] = useState(0);
 
@@ -8,7 +8,7 @@ const Product = () => {
 
     return (
         <div>
-            <p>Android - $199</p>
+            <p>{props.name} - ${props.price}</p>
             <button onClick={buy}>Buy</button>
             <h3>Quantity: {count} items</h3>
             <hr/>
