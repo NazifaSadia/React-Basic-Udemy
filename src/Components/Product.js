@@ -11,6 +11,7 @@ const Product = () => {
             <p>Android - $199</p>
             <button onClick={buy}>Buy</button>
             <h3>Quantity: {count} items</h3>
+            <hr/>
         </div>
     );
 };
