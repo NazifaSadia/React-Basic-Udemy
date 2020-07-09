@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Total = () => {
+const Total = (props) => {
     return (
         <div>
-            <h3>Total cash : </h3>
+            <h3>Total cash : ${props.total} </h3>
         </div>
     );
 };

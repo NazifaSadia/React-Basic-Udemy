@@ -4,7 +4,11 @@ const Product = (props) => {
 
     const [count, setCount] = useState(0);
 
-    const buy = ()=> setCount(count+1);
+    const buy = ()=> {
+        setCount(count+1);
+
+        props.handleTotal(props.price);
+    }
 
     // const show = ()=> props.handleShow(props.name);
     
